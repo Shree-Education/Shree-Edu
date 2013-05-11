@@ -12,7 +12,6 @@
     End Sub
 
     Private Sub srpic_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles srpic.LinkClicked
-
         Student_Reg.Show()
     End Sub
 
@@ -64,45 +63,8 @@
         Process.Start("C:\Users\Nitesh\Desktop\latest project\Shree15\Shree_Edu\Shree Education User Guide.pdf")
     End Sub
 
-    Private Sub LinkLabel3_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
-        Fees_status.Show()
-    End Sub
 
-    Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
-
-    End Sub
-
-    Private Sub LinkLabel2_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel2.LinkClicked
-        Student_Reg.Show()
-    End Sub
-
-    Private Sub LinkLabel4_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel4.LinkClicked
-        Add_Class.Show()
-    End Sub
-
-    Private Sub LinkLabel5_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel5.LinkClicked
-        Add_Test.Show()
-    End Sub
-
-    Private Sub LinkLabel6_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel6.LinkClicked
-        Assign_sub.Show()
-    End Sub
-
-    Private Sub LinkLabel7_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel7.LinkClicked
-        Marks_Data_Entry.Show()
-    End Sub
-
-    Private Sub LinkLabel10_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel10.LinkClicked
-        emailtest.Show()
-    End Sub
-
-    Private Sub LinkLabel9_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel9.LinkClicked
-        Change_Pwd.Show()
-    End Sub
-
-    Private Sub LinkLabel8_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles LinkLabel8.LinkClicked
-        Reports.Show()
-    End Sub
+    
 
     Private Sub StudentRegistrationToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles StudentRegistrationToolStripMenuItem.Click
         Student_Reg.Show()
@@ -146,5 +108,150 @@
 
     Private Sub ExitToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExitToolStripMenuItem.Click
         Me.Dispose()
+    End Sub
+
+
+    Private Sub Student_Reg_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Student_Reg_PictureBox.Click
+        Student_Reg.Show()
+    End Sub
+
+    Private Sub Student_Reg_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Student_Reg_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Student_Reg_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Student_Reg_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Fees_Status_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Fees_Status_PictureBox.Click
+        Fees_status.Show()
+    End Sub
+
+    Private Sub Fees_Status_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Fees_Status_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Fees_Status_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Fees_Status_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Add_Class_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Add_Class_PictureBox.Click
+        Add_Class.Show()
+    End Sub
+
+    Private Sub Add_Class_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Add_Class_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Add_Class_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Add_Class_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Add_Test_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Add_Test_PictureBox.Click
+        Add_Test.Show()
+    End Sub
+
+    Private Sub Add_Test_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Add_Test_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Add_Test_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Add_Test_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Assign_Subject_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Assign_Subject_Link.LinkClicked
+        Assign_sub.Show()
+    End Sub
+
+    Private Sub Assign_Subject_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Assign_Subject_PictureBox.Click
+        Assign_sub.Show()
+    End Sub
+
+    Private Sub Assign_Subject_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Assign_Subject_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Assign_Subject_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Assign_Subject_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Marks_Data_Entry_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Marks_Data_Entry_PictureBox.Click
+        Marks_Data_Entry.Show()
+    End Sub
+
+    Private Sub Marks_Data_Entry_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Marks_Data_Entry_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Marks_Data_Entry_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Marks_Data_Entry_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Marks_Data_Entry_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Marks_Data_Entry_Link.LinkClicked
+        Marks_Data_Entry.Show()
+    End Sub
+
+    Private Sub Email_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Email_PictureBox.Click
+        emailtest.Show()
+    End Sub
+
+    Private Sub Email_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Email_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Email_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Email_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Change_Pwd_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Change_Pwd_PictureBox.Click
+        Change_Pwd.Show()
+    End Sub
+
+    Private Sub Change_Pwd_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Change_Pwd_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Change_Pwd_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Change_Pwd_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Change_Pwd_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Change_Pwd_Link.LinkClicked
+        Change_Pwd.Show()
+    End Sub
+
+    Private Sub Report_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Report_Link.LinkClicked
+        Reports.Show()
+    End Sub
+
+    Private Sub Report_PictureBox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Report_PictureBox.Click
+        Reports.Show()
+    End Sub
+
+    Private Sub Report_PictureBox_MouseHover(ByVal sender As Object, ByVal e As System.EventArgs) Handles Report_PictureBox.MouseHover
+        Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Report_PictureBox_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Report_PictureBox.MouseLeave
+        Cursor = Cursors.Arrow
+    End Sub
+
+    Private Sub Student_Reg_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Student_Reg_Link.LinkClicked
+        Student_Reg.Show()
+    End Sub
+
+    Private Sub Fees_Status_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Fees_Status_Link.LinkClicked
+        Fees_status.Show()
+    End Sub
+
+    Private Sub Add_Class_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Add_Class_Link.LinkClicked
+        Add_Class.Show()
+    End Sub
+
+    Private Sub Add_Test_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Add_Test_Link.LinkClicked
+        Add_Test.Show()
+    End Sub
+
+    Private Sub Email_Link_LinkClicked(ByVal sender As System.Object, ByVal e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles Email_Link.LinkClicked
+        emailtest.Show()
     End Sub
 End Class

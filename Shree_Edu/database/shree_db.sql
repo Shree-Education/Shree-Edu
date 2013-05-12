@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Apr 11, 2013 at 12:50 PM
+-- Generation Time: May 12, 2013 at 06:10 PM
 -- Server version: 5.5.24-log
 -- PHP Version: 5.4.3
 
@@ -113,16 +113,19 @@ CREATE TABLE IF NOT EXISTS `fees_status` (
   `Student_Id` varchar(30) NOT NULL,
   `Subject_Id` varchar(30) NOT NULL,
   `Month` varchar(20) NOT NULL,
+  `Check_DD_No` varchar(30) NOT NULL,
   `Amount` double NOT NULL,
-  PRIMARY KEY (`Year`,`Student_Id`)
+  PRIMARY KEY (`Year`,`Student_Id`,`Month`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `fees_status`
 --
 
-INSERT INTO `fees_status` (`Year`, `Class`, `Student_Id`, `Subject_Id`, `Month`, `Amount`) VALUES
-('2013', '09', 'a', 'S9', 'January', 300);
+INSERT INTO `fees_status` (`Year`, `Class`, `Student_Id`, `Subject_Id`, `Month`, `Check_DD_No`, `Amount`) VALUES
+('2013', '09', 'a', 'M9', 'February', 'Not Available', 300),
+('2013', '09', 'a', 'S9', 'January', '', 300),
+('2013', '09', 'a', 'M9', 'May', 'Not Available', 300);
 
 -- --------------------------------------------------------
 
@@ -188,6 +191,8 @@ CREATE TABLE IF NOT EXISTS `student_info` (
   `Gender` varchar(10) NOT NULL,
   `School` varchar(40) NOT NULL,
   `Phone` int(11) NOT NULL,
+  `Student_Email` varchar(40) NOT NULL,
+  `Guardian_Email` varchar(40) NOT NULL,
   PRIMARY KEY (`Student_Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -195,11 +200,11 @@ CREATE TABLE IF NOT EXISTS `student_info` (
 -- Dumping data for table `student_info`
 --
 
-INSERT INTO `student_info` (`Student_Id`, `Year`, `Class`, `DOJ`, `Name`, `Fname`, `DOB`, `Address`, `Gender`, `School`, `Phone`) VALUES
-('a', 2013, 9, '2013-03-12', 'Mr. Ajeet ', 'nhbhfgcg', '2013-03-12', 'oooooo', 'Female', 'oooooooo', 24242),
-('b', 2013, 10, '2013-03-12', 'Rahul Sagore', 'm', '2013-03-12', 'mmmmmmmm', 'Male', 'mmmmmmmm', 2424242),
-('c', 2013, 11, '2013-03-12', 'Nitesh Mishra', 'nnnnnnn', '2013-03-12', 'nnn', 'Male', 'nnnnn', 24242),
-('d', 2013, 12, '2013-03-10', 'Ankit KulKarni', 'fbbb', '2013-03-10', 'fbfb', 'Male', 'bdcbcdbd', 242424);
+INSERT INTO `student_info` (`Student_Id`, `Year`, `Class`, `DOJ`, `Name`, `Fname`, `DOB`, `Address`, `Gender`, `School`, `Phone`, `Student_Email`, `Guardian_Email`) VALUES
+('a', 2013, 9, '2013-03-12', 'Mr. Ajeet ', 'nhbhfgcg', '2013-03-12', 'oooooo', 'Female', 'oooooooo', 24242, '', 'akhan.iipsmca@gmail.com'),
+('b', 2013, 9, '2013-03-12', 'Rahul Sagore', 'm', '2013-03-12', 'mmmmmmmm', 'Male', 'mmmmmmmm', 2424242, '', 'rahul.sagore@gmail.com'),
+('c', 2013, 9, '2013-03-12', 'Nitesh Mishra', 'nnnnnnn', '2013-03-12', 'nnn', 'Male', 'nnnnn', 24242, '', 'nmmishra.iipsmca@gmail.com'),
+('d', 2012, 12, '2013-03-10', 'Ankit KulKarni', 'fbbb', '2013-03-10', 'fbfb', 'Male', 'bdcbcdbd', 242424, '', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -25,77 +25,39 @@ Public Class Student_Reg
                 MsgBox("Fields can't left blank.", MsgBoxStyle.Critical)
             Else
                 con.Open()
-                Dim cmd1 As OdbcCommand
-                cmd1 = New OdbcCommand("select * from Student_Info where Student_Id ='" + sid.Text + "'", con)
-                If cmd1.ExecuteNonQuery > 0 Then
-                    Dim vname, vyear, vdetail, vsid, vfname, vdob, vaddress, vdoj, vschool, vcno, vgender As String
-                    vname = sname.Text
-                    vyear = year.Text
-                    vdetail = cdetail.Text
-                    vsid = sid.Text
-                    vfname = fname.Text
-                    vdob = dob.Text
-                    vaddress = addess.Text
-                    vdoj = doj.Text
-                    vschool = school.Text
-                    vcno = c_no.Text
-                    If male.Checked = True Then
-                        vgender = "Male"
-                    Else
-                        vgender = "Female"
-                    End If
-                    Dim cmd As OdbcCommand
-                    cmd = New OdbcCommand("update Student_Info set Student_Id='" + vsid + "' ,Year='" + vyear + "',Class='" + vdetail + "',DOJ='" + vdoj + "',Name='" + vname + "',Fname='" + vfname + "',DOB='" + vdob + "',Address='" + vaddress + "',Gender='" + vgender + "',School='" + vschool + "',Phone='" + vcno + "' where Student_Id='" + sid.Text + "'", con)
-                    cmd.ExecuteNonQuery()
-                    MsgBox("Information added Successfully", MsgBoxStyle.Information)
-                    sname.Clear()
-                    year.Text = ""
-                    cdetail.Text = ""
-                    sid.Text = ""
-                    fname.Clear()
-                    dob.Value = Now
-                    addess.Clear()
-                    doj.Text = ""
-                    school.Clear()
-                    c_no.Clear()
-                    male.Checked = False
-                    female.Checked = False
-
+                Dim vname, vyear, vdetail, vsid, vfname, vdob, vaddress, vdoj, vschool, vcno, vgender As String
+                vname = sname.Text
+                vyear = year.Text
+                vdetail = cdetail.Text
+                vsid = sid.Text
+                vfname = fname.Text
+                vdob = dob.Text
+                vaddress = addess.Text
+                vdoj = doj.Text
+                vschool = school.Text
+                vcno = c_no.Text
+                If male.Checked = True Then
+                    vgender = "Male"
                 Else
-                    Dim vname, vyear, vdetail, vsid, vfname, vdob, vaddress, vdoj, vschool, vcno, vgender As String
-                    vname = sname.Text
-                    vyear = year.Text
-                    vdetail = cdetail.Text
-                    vsid = sid.Text
-                    vfname = fname.Text
-                    vdob = dob.Text
-                    vaddress = addess.Text
-                    vdoj = doj.Text
-                    vschool = school.Text
-                    vcno = c_no.Text
-                    If male.Checked = True Then
-                        vgender = "Male"
-                    Else
-                        vgender = "Female"
-                    End If
-                    Dim cmd As OdbcCommand
-                    cmd = New OdbcCommand("insert into Student_Info (Student_Id,Year,Class,DOJ,Name,FName,DOB,Address,Gender,School,Phone) values('" + vsid + "','" + vyear + "','" + vdetail + "','" + vdoj + "','" + vname + "','" + vfname + "','" + vdob + "','" + vaddress + "','" + vgender + "','" + vschool + "','" + vcno + "')", con)
-                    cmd.ExecuteNonQuery()
-                    MsgBox("Information is Saved", MsgBoxStyle.Information)
-                    sname.Clear()
-                    year.Text = ""
-                    cdetail.Text = ""
-                    sid.Text = ""
-                    fname.Clear()
-                    dob.Value = Now
-                    addess.Clear()
-                    doj.Text = ""
-                    school.Clear()
-                    c_no.Clear()
-                    male.Checked = False
-                    female.Checked = False
-
+                    vgender = "Female"
                 End If
+                Dim cmd As OdbcCommand
+                cmd = New OdbcCommand("insert into Student_Info values('" + vsid + "','" + vyear + "','" + vdetail + "','" + vdoj + "','" + vname + "','" + vfname + "','" + vdob + "','" + vaddress + "','" + vgender + "','" + vschool + "','" + vcno + "','" + Student_Emailbox.Text + "','" + Guardian_Emailbox.Text + "')", con)
+                cmd.ExecuteNonQuery()
+                MsgBox("Information is Saved", MsgBoxStyle.Information)
+                sname.Clear()
+                year.Text = ""
+                cdetail.Text = ""
+                sid.Text = ""
+                fname.Clear()
+                dob.Value = Now
+                addess.Clear()
+                doj.Text = ""
+                school.Clear()
+                c_no.Clear()
+                male.Checked = False
+                female.Checked = False
+
             End If
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -308,17 +270,6 @@ Public Class Student_Reg
         con.Close()
     End Sub
 
-    Private Sub okbox_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles okbox.Click
-
-    End Sub
-
-    Private Sub searchi_datagrid_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles searchi_datagrid.CellContentClick
-
-    End Sub
-
-    Private Sub searchi_datagrid_CellMouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellMouseEventArgs) Handles searchi_datagrid.CellMouseClick
-
-    End Sub
 
     Private Sub searchi_datagrid_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles searchi_datagrid.Click
         searchname.Text = searchn_datagrid.CurrentCell.Value.ToString

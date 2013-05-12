@@ -65,6 +65,10 @@ Partial Class Student_Reg
         Me.Label7 = New System.Windows.Forms.Label
         Me.searchn_datagrid = New System.Windows.Forms.DataGridView
         Me.searchi_datagrid = New System.Windows.Forms.DataGridView
+        Me.Student_Emailbox = New System.Windows.Forms.TextBox
+        Me.Label14 = New System.Windows.Forms.Label
+        Me.Guardian_Emailbox = New System.Windows.Forms.TextBox
+        Me.Label17 = New System.Windows.Forms.Label
         Me.GroupBox1.SuspendLayout()
         Me.sid_groupbox.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -148,6 +152,10 @@ Partial Class Student_Reg
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Guardian_Emailbox)
+        Me.GroupBox1.Controls.Add(Me.Label17)
+        Me.GroupBox1.Controls.Add(Me.Student_Emailbox)
+        Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.sid_groupbox)
         Me.GroupBox1.Controls.Add(Me.Label13)
@@ -178,10 +186,10 @@ Partial Class Student_Reg
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.GroupBox1.Location = New System.Drawing.Point(22, 21)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(734, 469)
+        Me.GroupBox1.Size = New System.Drawing.Size(734, 528)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Student Detail"
+        Me.GroupBox1.Text = "` "
         '
         'Label12
         '
@@ -204,7 +212,7 @@ Partial Class Student_Reg
         Me.sid_groupbox.Controls.Add(Me.searchid)
         Me.sid_groupbox.Controls.Add(Me.search)
         Me.sid_groupbox.Controls.Add(Me.Label15)
-        Me.sid_groupbox.Location = New System.Drawing.Point(378, 330)
+        Me.sid_groupbox.Location = New System.Drawing.Point(381, 384)
         Me.sid_groupbox.Name = "sid_groupbox"
         Me.sid_groupbox.Size = New System.Drawing.Size(333, 133)
         Me.sid_groupbox.TabIndex = 37
@@ -314,7 +322,7 @@ Partial Class Student_Reg
         '
         Me.Panel1.Controls.Add(Me.delete)
         Me.Panel1.Controls.Add(Me.save)
-        Me.Panel1.Location = New System.Drawing.Point(26, 339)
+        Me.Panel1.Location = New System.Drawing.Point(22, 393)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(346, 83)
         Me.Panel1.TabIndex = 33
@@ -497,21 +505,56 @@ Partial Class Student_Reg
         Me.searchi_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.searchi_datagrid.Location = New System.Drawing.Point(763, 33)
         Me.searchi_datagrid.Name = "searchi_datagrid"
-        Me.searchi_datagrid.Size = New System.Drawing.Size(240, 228)
+        Me.searchi_datagrid.Size = New System.Drawing.Size(240, 437)
         Me.searchi_datagrid.TabIndex = 25
+        '
+        'Student_Emailbox
+        '
+        Me.Student_Emailbox.Location = New System.Drawing.Point(139, 324)
+        Me.Student_Emailbox.Multiline = True
+        Me.Student_Emailbox.Name = "Student_Emailbox"
+        Me.Student_Emailbox.Size = New System.Drawing.Size(213, 20)
+        Me.Student_Emailbox.TabIndex = 39
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(17, 324)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(120, 17)
+        Me.Label14.TabIndex = 40
+        Me.Label14.Text = "Student's Email"
+        '
+        'Guardian_Emailbox
+        '
+        Me.Guardian_Emailbox.Location = New System.Drawing.Point(495, 327)
+        Me.Guardian_Emailbox.Multiline = True
+        Me.Guardian_Emailbox.Name = "Guardian_Emailbox"
+        Me.Guardian_Emailbox.Size = New System.Drawing.Size(216, 20)
+        Me.Guardian_Emailbox.TabIndex = 41
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(364, 327)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(131, 17)
+        Me.Label17.TabIndex = 42
+        Me.Label17.Text = "Guardian's Email"
         '
         'Student_Reg
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1015, 485)
+        Me.ClientSize = New System.Drawing.Size(1015, 561)
         Me.Controls.Add(Me.searchi_datagrid)
         Me.Controls.Add(Me.searchn_datagrid)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label16)
         Me.ForeColor = System.Drawing.Color.Black
-        Me.MaximumSize = New System.Drawing.Size(1031, 523)
         Me.Name = "Student_Reg"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Student Information"
@@ -571,4 +614,8 @@ Partial Class Student_Reg
     Friend WithEvents idbox As System.Windows.Forms.Button
     Friend WithEvents namebox As System.Windows.Forms.Button
     Friend WithEvents okbox As System.Windows.Forms.Button
+    Friend WithEvents Student_Emailbox As System.Windows.Forms.TextBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Guardian_Emailbox As System.Windows.Forms.TextBox
+    Friend WithEvents Label17 As System.Windows.Forms.Label
 End Class

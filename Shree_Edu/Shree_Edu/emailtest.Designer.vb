@@ -37,39 +37,44 @@ Partial Class emailtest
         Me.attachmenttextbox = New System.Windows.Forms.TextBox
         Me.browsebutton = New System.Windows.Forms.Button
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar
+        Me.Label6 = New System.Windows.Forms.Label
+        Me.Yearcombo = New System.Windows.Forms.ComboBox
+        Me.class_detail = New System.Windows.Forms.ComboBox
+        Me.Label8 = New System.Windows.Forms.Label
+        Me.emaildatagrid = New System.Windows.Forms.DataGridView
+        CType(Me.emaildatagrid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'bodytextbox
         '
-        Me.bodytextbox.Location = New System.Drawing.Point(108, 131)
+        Me.bodytextbox.Location = New System.Drawing.Point(99, 396)
         Me.bodytextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.bodytextbox.Multiline = True
         Me.bodytextbox.Name = "bodytextbox"
-        Me.bodytextbox.Size = New System.Drawing.Size(388, 193)
-        Me.bodytextbox.TabIndex = 3
+        Me.bodytextbox.Size = New System.Drawing.Size(502, 103)
+        Me.bodytextbox.TabIndex = 5
         '
         'usernametextbox
         '
-        Me.usernametextbox.Location = New System.Drawing.Point(111, 383)
+        Me.usernametextbox.Location = New System.Drawing.Point(102, 558)
         Me.usernametextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.usernametextbox.Name = "usernametextbox"
-        Me.usernametextbox.Size = New System.Drawing.Size(388, 22)
-        Me.usernametextbox.TabIndex = 5
+        Me.usernametextbox.Size = New System.Drawing.Size(371, 22)
+        Me.usernametextbox.TabIndex = 7
         '
         'passwordtextbox
         '
-        Me.passwordtextbox.Location = New System.Drawing.Point(111, 422)
+        Me.passwordtextbox.Location = New System.Drawing.Point(102, 597)
         Me.passwordtextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.passwordtextbox.Name = "passwordtextbox"
         Me.passwordtextbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.passwordtextbox.Size = New System.Drawing.Size(388, 22)
-        Me.passwordtextbox.TabIndex = 6
+        Me.passwordtextbox.Size = New System.Drawing.Size(371, 22)
+        Me.passwordtextbox.TabIndex = 8
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(19, 384)
+        Me.Label1.Location = New System.Drawing.Point(10, 559)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(79, 16)
@@ -79,7 +84,7 @@ Partial Class emailtest
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(19, 420)
+        Me.Label2.Location = New System.Drawing.Point(10, 595)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(76, 16)
@@ -88,18 +93,18 @@ Partial Class emailtest
         '
         'sendbutton
         '
-        Me.sendbutton.Location = New System.Drawing.Point(111, 461)
+        Me.sendbutton.Location = New System.Drawing.Point(128, 642)
         Me.sendbutton.Margin = New System.Windows.Forms.Padding(4)
         Me.sendbutton.Name = "sendbutton"
         Me.sendbutton.Size = New System.Drawing.Size(112, 28)
-        Me.sendbutton.TabIndex = 7
+        Me.sendbutton.TabIndex = 9
         Me.sendbutton.Text = "Send"
         Me.sendbutton.UseVisualStyleBackColor = True
         '
         'Body
         '
         Me.Body.AutoSize = True
-        Me.Body.Location = New System.Drawing.Point(16, 221)
+        Me.Body.Location = New System.Drawing.Point(13, 435)
         Me.Body.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Body.Name = "Body"
         Me.Body.Size = New System.Drawing.Size(44, 16)
@@ -109,7 +114,7 @@ Partial Class emailtest
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 91)
+        Me.Label3.Location = New System.Drawing.Point(9, 353)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 16)
@@ -119,7 +124,7 @@ Partial Class emailtest
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(16, 56)
+        Me.Label4.Location = New System.Drawing.Point(13, 254)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(27, 16)
@@ -128,24 +133,26 @@ Partial Class emailtest
         '
         'subjecttextbox
         '
-        Me.subjecttextbox.Location = New System.Drawing.Point(108, 89)
+        Me.subjecttextbox.Location = New System.Drawing.Point(99, 333)
         Me.subjecttextbox.Margin = New System.Windows.Forms.Padding(4)
+        Me.subjecttextbox.Multiline = True
         Me.subjecttextbox.Name = "subjecttextbox"
-        Me.subjecttextbox.Size = New System.Drawing.Size(388, 22)
-        Me.subjecttextbox.TabIndex = 2
+        Me.subjecttextbox.Size = New System.Drawing.Size(502, 46)
+        Me.subjecttextbox.TabIndex = 4
         '
         'totextbox
         '
-        Me.totextbox.Location = New System.Drawing.Point(108, 50)
+        Me.totextbox.Location = New System.Drawing.Point(99, 199)
         Me.totextbox.Margin = New System.Windows.Forms.Padding(4)
+        Me.totextbox.Multiline = True
         Me.totextbox.Name = "totextbox"
-        Me.totextbox.Size = New System.Drawing.Size(388, 22)
-        Me.totextbox.TabIndex = 1
+        Me.totextbox.Size = New System.Drawing.Size(502, 117)
+        Me.totextbox.TabIndex = 3
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(18, 346)
+        Me.Label5.Location = New System.Drawing.Point(9, 521)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(84, 16)
@@ -154,19 +161,19 @@ Partial Class emailtest
         '
         'attachmenttextbox
         '
-        Me.attachmenttextbox.Location = New System.Drawing.Point(108, 344)
+        Me.attachmenttextbox.Location = New System.Drawing.Point(99, 519)
         Me.attachmenttextbox.Margin = New System.Windows.Forms.Padding(4)
         Me.attachmenttextbox.Name = "attachmenttextbox"
-        Me.attachmenttextbox.Size = New System.Drawing.Size(244, 22)
+        Me.attachmenttextbox.Size = New System.Drawing.Size(374, 22)
         Me.attachmenttextbox.TabIndex = 12
         '
         'browsebutton
         '
-        Me.browsebutton.Location = New System.Drawing.Point(357, 344)
+        Me.browsebutton.Location = New System.Drawing.Point(481, 517)
         Me.browsebutton.Margin = New System.Windows.Forms.Padding(4)
         Me.browsebutton.Name = "browsebutton"
         Me.browsebutton.Size = New System.Drawing.Size(120, 24)
-        Me.browsebutton.TabIndex = 13
+        Me.browsebutton.TabIndex = 6
         Me.browsebutton.Text = "Browse"
         Me.browsebutton.UseVisualStyleBackColor = True
         '
@@ -176,20 +183,59 @@ Partial Class emailtest
         Me.OpenFileDialog1.Filter = "Text Files(*.txt)|*.txt|All Files(*.*)|*.*"
         Me.OpenFileDialog1.InitialDirectory = "C:\Users\Nitesh\Desktop"
         '
-        'ProgressBar1
+        'Label6
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(275, 461)
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(100, 23)
-        Me.ProgressBar1.TabIndex = 14
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(15, 39)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(41, 16)
+        Me.Label6.TabIndex = 20
+        Me.Label6.Text = "Year"
+        '
+        'Yearcombo
+        '
+        Me.Yearcombo.FormattingEnabled = True
+        Me.Yearcombo.Location = New System.Drawing.Point(103, 39)
+        Me.Yearcombo.Name = "Yearcombo"
+        Me.Yearcombo.Size = New System.Drawing.Size(137, 24)
+        Me.Yearcombo.TabIndex = 1
+        '
+        'class_detail
+        '
+        Me.class_detail.FormattingEnabled = True
+        Me.class_detail.Location = New System.Drawing.Point(103, 84)
+        Me.class_detail.Name = "class_detail"
+        Me.class_detail.Size = New System.Drawing.Size(137, 24)
+        Me.class_detail.TabIndex = 2
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(15, 89)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(47, 16)
+        Me.Label8.TabIndex = 15
+        Me.Label8.Text = "Class"
+        '
+        'emaildatagrid
+        '
+        Me.emaildatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.emaildatagrid.Location = New System.Drawing.Point(262, 26)
+        Me.emaildatagrid.Name = "emaildatagrid"
+        Me.emaildatagrid.Size = New System.Drawing.Size(339, 150)
+        Me.emaildatagrid.TabIndex = 21
         '
         'emailtest
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
-        Me.ClientSize = New System.Drawing.Size(514, 493)
-        Me.Controls.Add(Me.ProgressBar1)
+        Me.ClientSize = New System.Drawing.Size(603, 708)
+        Me.Controls.Add(Me.emaildatagrid)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Yearcombo)
+        Me.Controls.Add(Me.class_detail)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.browsebutton)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.attachmenttextbox)
@@ -208,6 +254,7 @@ Partial Class emailtest
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "emailtest"
         Me.Text = "emailtest"
+        CType(Me.emaildatagrid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -227,5 +274,9 @@ Partial Class emailtest
     Friend WithEvents attachmenttextbox As System.Windows.Forms.TextBox
     Friend WithEvents browsebutton As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
-    Friend WithEvents ProgressBar1 As System.Windows.Forms.ProgressBar
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents Yearcombo As System.Windows.Forms.ComboBox
+    Friend WithEvents class_detail As System.Windows.Forms.ComboBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents emaildatagrid As System.Windows.Forms.DataGridView
 End Class

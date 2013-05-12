@@ -98,13 +98,6 @@ Public Class Assign_sub
         con.Close()
     End Sub
 
-    Private Sub Yearcombo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Yearcombo.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Stud_Id_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Stud_Id.SelectedIndexChanged
-
-    End Sub
 
     Private Sub mainmenu_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles mainmenu.Click
         Me.Hide()

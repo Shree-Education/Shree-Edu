@@ -81,7 +81,7 @@ Public Class Reports
             dr = cmd.ExecuteReader
             While dr.Read
                 studentidcombobox.Items.Add(dr.Item(0))
-                namelabel.Text = (dr.Item(0))
+                'namelabel.Text = (dr.Item(0))
             End While
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -89,9 +89,6 @@ Public Class Reports
         con.Close()
     End Sub
 
-    Private Sub studentidcombobox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles studentidcombobox.SelectedIndexChanged
-
-    End Sub
 
     Private Sub sid_combo_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles sid_combo.Click
         Try
@@ -108,10 +105,6 @@ Public Class Reports
 
         End Try
         con.Close()
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles sid_combo.SelectedIndexChanged
-
     End Sub
 
     Private Sub classwisebtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles classwisebtn.Click
@@ -144,10 +137,6 @@ Public Class Reports
         con.Close()
     End Sub
 
-    Private Sub yearcombo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles yearcombo.SelectedIndexChanged
-
-    End Sub
-
     Private Sub classcombo_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles classcombo.Click
         Try
             con.Open()
@@ -163,10 +152,6 @@ Public Class Reports
             MsgBox(ex.ToString)
         End Try
         con.Close()
-    End Sub
-
-    Private Sub classcombo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles classcombo.SelectedIndexChanged
-
     End Sub
 
     Private Sub testid_combo_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles testid_combo.Click
@@ -186,11 +171,19 @@ Public Class Reports
         con.Close()
     End Sub
 
-    Private Sub testid_combo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles testid_combo.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub GroupBox2_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox2.Enter
-
+    Private Sub studentidcombobox_SelectedValueChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles studentidcombobox.SelectedValueChanged
+        Try
+            con.Open()
+            Dim cmd As OdbcCommand
+            cmd = New OdbcCommand("select Name from Student_Info where Student_Id='" + studentidcombobox.Text + "' ", con)
+            Dim dr As OdbcDataReader
+            dr = cmd.ExecuteReader
+            While dr.Read
+                namelabel.Text = (dr.Item(0))
+            End While
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+        con.Close()
     End Sub
 End Class

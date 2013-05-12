@@ -36,6 +36,7 @@ Partial Class Select_Action
         Me.StudentFeesStatusToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.EmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ChangePasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.LogOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
@@ -54,55 +55,54 @@ Partial Class Select_Action
         Me.atpic = New System.Windows.Forms.LinkLabel
         Me.srpic = New System.Windows.Forms.LinkLabel
         Me.Panel1 = New System.Windows.Forms.Panel
-        Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox
+        Me.Student_Reg_Link = New System.Windows.Forms.LinkLabel
+        Me.Student_Reg_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel4 = New System.Windows.Forms.Panel
-        Me.LinkLabel3 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
+        Me.Fees_Status_Link = New System.Windows.Forms.LinkLabel
+        Me.Fees_Status_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel5 = New System.Windows.Forms.Panel
-        Me.LinkLabel4 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox
+        Me.Add_Class_Link = New System.Windows.Forms.LinkLabel
+        Me.Add_Class_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel7 = New System.Windows.Forms.Panel
-        Me.LinkLabel5 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox
+        Me.Add_Test_Link = New System.Windows.Forms.LinkLabel
+        Me.Add_Test_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel8 = New System.Windows.Forms.Panel
-        Me.LinkLabel6 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox
+        Me.Assign_Subject_Link = New System.Windows.Forms.LinkLabel
+        Me.Assign_Subject_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel9 = New System.Windows.Forms.Panel
-        Me.LinkLabel7 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox
+        Me.Marks_Data_Entry_Link = New System.Windows.Forms.LinkLabel
+        Me.Marks_Data_Entry_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel10 = New System.Windows.Forms.Panel
-        Me.LinkLabel8 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox7 = New System.Windows.Forms.PictureBox
+        Me.Report_Link = New System.Windows.Forms.LinkLabel
+        Me.Report_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel11 = New System.Windows.Forms.Panel
-        Me.LinkLabel9 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox
+        Me.Change_Pwd_Link = New System.Windows.Forms.LinkLabel
+        Me.Change_Pwd_PictureBox = New System.Windows.Forms.PictureBox
         Me.Panel12 = New System.Windows.Forms.Panel
-        Me.LinkLabel10 = New System.Windows.Forms.LinkLabel
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox
+        Me.Email_Link = New System.Windows.Forms.LinkLabel
+        Me.Email_PictureBox = New System.Windows.Forms.PictureBox
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.MenuStrip1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Student_Reg_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Fees_Status_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Add_Class_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Add_Test_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel8.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Assign_Subject_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Marks_Data_Entry_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel10.SuspendLayout()
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Report_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel11.SuspendLayout()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Change_Pwd_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel12.SuspendLayout()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Email_PictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -137,7 +137,7 @@ Partial Class Select_Action
         '
         Me.OpenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.StudentRegistrationToolStripMenuItem, Me.AddTestToolStripMenuItem, Me.AddClassToolStripMenuItem, Me.AssignSubjectToolStripMenuItem, Me.MarksDataEntryToolStripMenuItem, Me.StudentFeesStatusToolStripMenuItem, Me.EmailToolStripMenuItem, Me.ChangePasswordToolStripMenuItem, Me.ReportsToolStripMenuItem})
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'StudentRegistrationToolStripMenuItem
@@ -188,16 +188,22 @@ Partial Class Select_Action
         Me.ChangePasswordToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.ChangePasswordToolStripMenuItem.Text = "Change Password"
         '
+        'ReportsToolStripMenuItem
+        '
+        Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.ReportsToolStripMenuItem.Text = "Reports"
+        '
         'LogOutToolStripMenuItem
         '
         Me.LogOutToolStripMenuItem.Name = "LogOutToolStripMenuItem"
-        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LogOutToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
         Me.LogOutToolStripMenuItem.Text = "Log out"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(115, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'ToolStripMenuItem1
@@ -375,297 +381,291 @@ Partial Class Select_Action
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel1.Controls.Add(Me.LinkLabel2)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.Student_Reg_Link)
+        Me.Panel1.Controls.Add(Me.Student_Reg_PictureBox)
         Me.Panel1.Location = New System.Drawing.Point(190, 84)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(151, 126)
         Me.Panel1.TabIndex = 71
         '
-        'LinkLabel2
+        'Student_Reg_Link
         '
-        Me.LinkLabel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel2.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel2.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel2.Location = New System.Drawing.Point(3, 97)
-        Me.LinkLabel2.Name = "LinkLabel2"
-        Me.LinkLabel2.Size = New System.Drawing.Size(148, 19)
-        Me.LinkLabel2.TabIndex = 1
-        Me.LinkLabel2.TabStop = True
-        Me.LinkLabel2.Text = "Student Registration"
+        Me.Student_Reg_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Student_Reg_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Student_Reg_Link.ForeColor = System.Drawing.Color.Black
+        Me.Student_Reg_Link.LinkColor = System.Drawing.Color.Black
+        Me.Student_Reg_Link.Location = New System.Drawing.Point(3, 97)
+        Me.Student_Reg_Link.Name = "Student_Reg_Link"
+        Me.Student_Reg_Link.Size = New System.Drawing.Size(148, 19)
+        Me.Student_Reg_Link.TabIndex = 1
+        Me.Student_Reg_Link.TabStop = True
+        Me.Student_Reg_Link.Text = "Student Registration"
         '
-        'PictureBox1
+        'Student_Reg_PictureBox
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(29, 10)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(85, 84)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.Student_Reg_PictureBox.Image = CType(resources.GetObject("Student_Reg_PictureBox.Image"), System.Drawing.Image)
+        Me.Student_Reg_PictureBox.Location = New System.Drawing.Point(29, 10)
+        Me.Student_Reg_PictureBox.Name = "Student_Reg_PictureBox"
+        Me.Student_Reg_PictureBox.Size = New System.Drawing.Size(85, 84)
+        Me.Student_Reg_PictureBox.TabIndex = 0
+        Me.Student_Reg_PictureBox.TabStop = False
         '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel4.Controls.Add(Me.LinkLabel3)
-        Me.Panel4.Controls.Add(Me.PictureBox2)
+        Me.Panel4.Controls.Add(Me.Fees_Status_Link)
+        Me.Panel4.Controls.Add(Me.Fees_Status_PictureBox)
         Me.Panel4.Location = New System.Drawing.Point(361, 84)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(139, 126)
         Me.Panel4.TabIndex = 72
         '
-        'LinkLabel3
+        'Fees_Status_Link
         '
-        Me.LinkLabel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel3.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel3.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel3.Location = New System.Drawing.Point(31, 97)
-        Me.LinkLabel3.Name = "LinkLabel3"
-        Me.LinkLabel3.Size = New System.Drawing.Size(86, 19)
-        Me.LinkLabel3.TabIndex = 1
-        Me.LinkLabel3.TabStop = True
-        Me.LinkLabel3.Text = "Fee Status"
+        Me.Fees_Status_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Fees_Status_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Fees_Status_Link.ForeColor = System.Drawing.Color.Black
+        Me.Fees_Status_Link.LinkColor = System.Drawing.Color.Black
+        Me.Fees_Status_Link.Location = New System.Drawing.Point(31, 97)
+        Me.Fees_Status_Link.Name = "Fees_Status_Link"
+        Me.Fees_Status_Link.Size = New System.Drawing.Size(86, 19)
+        Me.Fees_Status_Link.TabIndex = 1
+        Me.Fees_Status_Link.TabStop = True
+        Me.Fees_Status_Link.Text = "Fee Status"
         '
-        'PictureBox2
+        'Fees_Status_PictureBox
         '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(34, 10)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(73, 84)
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
+        Me.Fees_Status_PictureBox.Image = CType(resources.GetObject("Fees_Status_PictureBox.Image"), System.Drawing.Image)
+        Me.Fees_Status_PictureBox.Location = New System.Drawing.Point(34, 10)
+        Me.Fees_Status_PictureBox.Name = "Fees_Status_PictureBox"
+        Me.Fees_Status_PictureBox.Size = New System.Drawing.Size(73, 84)
+        Me.Fees_Status_PictureBox.TabIndex = 0
+        Me.Fees_Status_PictureBox.TabStop = False
         '
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel5.Controls.Add(Me.LinkLabel4)
-        Me.Panel5.Controls.Add(Me.PictureBox3)
+        Me.Panel5.Controls.Add(Me.Add_Class_Link)
+        Me.Panel5.Controls.Add(Me.Add_Class_PictureBox)
         Me.Panel5.Location = New System.Drawing.Point(518, 84)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(139, 126)
         Me.Panel5.TabIndex = 73
         '
-        'LinkLabel4
+        'Add_Class_Link
         '
-        Me.LinkLabel4.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel4.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel4.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel4.Location = New System.Drawing.Point(21, 100)
-        Me.LinkLabel4.Name = "LinkLabel4"
-        Me.LinkLabel4.Size = New System.Drawing.Size(86, 19)
-        Me.LinkLabel4.TabIndex = 1
-        Me.LinkLabel4.TabStop = True
-        Me.LinkLabel4.Text = "Add Class"
+        Me.Add_Class_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Add_Class_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Add_Class_Link.ForeColor = System.Drawing.Color.Black
+        Me.Add_Class_Link.LinkColor = System.Drawing.Color.Black
+        Me.Add_Class_Link.Location = New System.Drawing.Point(21, 100)
+        Me.Add_Class_Link.Name = "Add_Class_Link"
+        Me.Add_Class_Link.Size = New System.Drawing.Size(86, 19)
+        Me.Add_Class_Link.TabIndex = 1
+        Me.Add_Class_Link.TabStop = True
+        Me.Add_Class_Link.Text = "Add Class"
         '
-        'PictureBox3
+        'Add_Class_PictureBox
         '
-        Me.PictureBox3.BackColor = System.Drawing.SystemColors.HighlightText
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(24, 10)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(93, 84)
-        Me.PictureBox3.TabIndex = 0
-        Me.PictureBox3.TabStop = False
+        Me.Add_Class_PictureBox.BackColor = System.Drawing.SystemColors.HighlightText
+        Me.Add_Class_PictureBox.Image = CType(resources.GetObject("Add_Class_PictureBox.Image"), System.Drawing.Image)
+        Me.Add_Class_PictureBox.Location = New System.Drawing.Point(24, 10)
+        Me.Add_Class_PictureBox.Name = "Add_Class_PictureBox"
+        Me.Add_Class_PictureBox.Size = New System.Drawing.Size(93, 84)
+        Me.Add_Class_PictureBox.TabIndex = 0
+        Me.Add_Class_PictureBox.TabStop = False
         '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel7.Controls.Add(Me.LinkLabel5)
-        Me.Panel7.Controls.Add(Me.PictureBox4)
+        Me.Panel7.Controls.Add(Me.Add_Test_Link)
+        Me.Panel7.Controls.Add(Me.Add_Test_PictureBox)
         Me.Panel7.Location = New System.Drawing.Point(190, 221)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(151, 126)
         Me.Panel7.TabIndex = 74
         '
-        'LinkLabel5
+        'Add_Test_Link
         '
-        Me.LinkLabel5.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel5.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel5.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel5.Location = New System.Drawing.Point(21, 97)
-        Me.LinkLabel5.Name = "LinkLabel5"
-        Me.LinkLabel5.Size = New System.Drawing.Size(86, 19)
-        Me.LinkLabel5.TabIndex = 1
-        Me.LinkLabel5.TabStop = True
-        Me.LinkLabel5.Text = "Add Test"
+        Me.Add_Test_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Add_Test_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Add_Test_Link.ForeColor = System.Drawing.Color.Black
+        Me.Add_Test_Link.LinkColor = System.Drawing.Color.Black
+        Me.Add_Test_Link.Location = New System.Drawing.Point(21, 97)
+        Me.Add_Test_Link.Name = "Add_Test_Link"
+        Me.Add_Test_Link.Size = New System.Drawing.Size(86, 19)
+        Me.Add_Test_Link.TabIndex = 1
+        Me.Add_Test_Link.TabStop = True
+        Me.Add_Test_Link.Text = "Add Test"
         '
-        'PictureBox4
+        'Add_Test_PictureBox
         '
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(24, 10)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(83, 84)
-        Me.PictureBox4.TabIndex = 0
-        Me.PictureBox4.TabStop = False
+        Me.Add_Test_PictureBox.Image = CType(resources.GetObject("Add_Test_PictureBox.Image"), System.Drawing.Image)
+        Me.Add_Test_PictureBox.Location = New System.Drawing.Point(24, 10)
+        Me.Add_Test_PictureBox.Name = "Add_Test_PictureBox"
+        Me.Add_Test_PictureBox.Size = New System.Drawing.Size(83, 84)
+        Me.Add_Test_PictureBox.TabIndex = 0
+        Me.Add_Test_PictureBox.TabStop = False
         '
         'Panel8
         '
         Me.Panel8.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel8.Controls.Add(Me.LinkLabel6)
-        Me.Panel8.Controls.Add(Me.PictureBox5)
+        Me.Panel8.Controls.Add(Me.Assign_Subject_Link)
+        Me.Panel8.Controls.Add(Me.Assign_Subject_PictureBox)
         Me.Panel8.Location = New System.Drawing.Point(361, 221)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(139, 126)
         Me.Panel8.TabIndex = 75
         '
-        'LinkLabel6
+        'Assign_Subject_Link
         '
-        Me.LinkLabel6.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel6.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel6.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel6.Location = New System.Drawing.Point(12, 97)
-        Me.LinkLabel6.Name = "LinkLabel6"
-        Me.LinkLabel6.Size = New System.Drawing.Size(124, 19)
-        Me.LinkLabel6.TabIndex = 1
-        Me.LinkLabel6.TabStop = True
-        Me.LinkLabel6.Text = "Assign Subject"
+        Me.Assign_Subject_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Assign_Subject_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Assign_Subject_Link.ForeColor = System.Drawing.Color.Black
+        Me.Assign_Subject_Link.LinkColor = System.Drawing.Color.Black
+        Me.Assign_Subject_Link.Location = New System.Drawing.Point(12, 97)
+        Me.Assign_Subject_Link.Name = "Assign_Subject_Link"
+        Me.Assign_Subject_Link.Size = New System.Drawing.Size(124, 19)
+        Me.Assign_Subject_Link.TabIndex = 1
+        Me.Assign_Subject_Link.TabStop = True
+        Me.Assign_Subject_Link.Text = "Assign Subject"
         '
-        'PictureBox5
+        'Assign_Subject_PictureBox
         '
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(24, 10)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(83, 84)
-        Me.PictureBox5.TabIndex = 0
-        Me.PictureBox5.TabStop = False
+        Me.Assign_Subject_PictureBox.Image = CType(resources.GetObject("Assign_Subject_PictureBox.Image"), System.Drawing.Image)
+        Me.Assign_Subject_PictureBox.Location = New System.Drawing.Point(24, 10)
+        Me.Assign_Subject_PictureBox.Name = "Assign_Subject_PictureBox"
+        Me.Assign_Subject_PictureBox.Size = New System.Drawing.Size(83, 84)
+        Me.Assign_Subject_PictureBox.TabIndex = 0
+        Me.Assign_Subject_PictureBox.TabStop = False
         '
         'Panel9
         '
         Me.Panel9.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel9.Controls.Add(Me.LinkLabel7)
-        Me.Panel9.Controls.Add(Me.PictureBox6)
+        Me.Panel9.Controls.Add(Me.Marks_Data_Entry_Link)
+        Me.Panel9.Controls.Add(Me.Marks_Data_Entry_PictureBox)
         Me.Panel9.Location = New System.Drawing.Point(518, 221)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(139, 126)
         Me.Panel9.TabIndex = 76
         '
-        'LinkLabel7
+        'Marks_Data_Entry_Link
         '
-        Me.LinkLabel7.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel7.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel7.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel7.Location = New System.Drawing.Point(3, 97)
-        Me.LinkLabel7.Name = "LinkLabel7"
-        Me.LinkLabel7.Size = New System.Drawing.Size(133, 19)
-        Me.LinkLabel7.TabIndex = 1
-        Me.LinkLabel7.TabStop = True
-        Me.LinkLabel7.Text = "Marks Data Entry"
+        Me.Marks_Data_Entry_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Marks_Data_Entry_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Marks_Data_Entry_Link.ForeColor = System.Drawing.Color.Black
+        Me.Marks_Data_Entry_Link.LinkColor = System.Drawing.Color.Black
+        Me.Marks_Data_Entry_Link.Location = New System.Drawing.Point(3, 97)
+        Me.Marks_Data_Entry_Link.Name = "Marks_Data_Entry_Link"
+        Me.Marks_Data_Entry_Link.Size = New System.Drawing.Size(133, 19)
+        Me.Marks_Data_Entry_Link.TabIndex = 1
+        Me.Marks_Data_Entry_Link.TabStop = True
+        Me.Marks_Data_Entry_Link.Text = "Marks Data Entry"
         '
-        'PictureBox6
+        'Marks_Data_Entry_PictureBox
         '
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(24, 10)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(83, 84)
-        Me.PictureBox6.TabIndex = 0
-        Me.PictureBox6.TabStop = False
+        Me.Marks_Data_Entry_PictureBox.Image = CType(resources.GetObject("Marks_Data_Entry_PictureBox.Image"), System.Drawing.Image)
+        Me.Marks_Data_Entry_PictureBox.Location = New System.Drawing.Point(24, 10)
+        Me.Marks_Data_Entry_PictureBox.Name = "Marks_Data_Entry_PictureBox"
+        Me.Marks_Data_Entry_PictureBox.Size = New System.Drawing.Size(83, 84)
+        Me.Marks_Data_Entry_PictureBox.TabIndex = 0
+        Me.Marks_Data_Entry_PictureBox.TabStop = False
         '
         'Panel10
         '
         Me.Panel10.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel10.Controls.Add(Me.LinkLabel8)
-        Me.Panel10.Controls.Add(Me.PictureBox7)
+        Me.Panel10.Controls.Add(Me.Report_Link)
+        Me.Panel10.Controls.Add(Me.Report_PictureBox)
         Me.Panel10.Location = New System.Drawing.Point(520, 364)
         Me.Panel10.Name = "Panel10"
         Me.Panel10.Size = New System.Drawing.Size(139, 126)
         Me.Panel10.TabIndex = 79
         '
-        'LinkLabel8
+        'Report_Link
         '
-        Me.LinkLabel8.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel8.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel8.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel8.Location = New System.Drawing.Point(31, 97)
-        Me.LinkLabel8.Name = "LinkLabel8"
-        Me.LinkLabel8.Size = New System.Drawing.Size(66, 19)
-        Me.LinkLabel8.TabIndex = 1
-        Me.LinkLabel8.TabStop = True
-        Me.LinkLabel8.Text = "Reports"
+        Me.Report_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Report_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Report_Link.ForeColor = System.Drawing.Color.Black
+        Me.Report_Link.LinkColor = System.Drawing.Color.Black
+        Me.Report_Link.Location = New System.Drawing.Point(31, 97)
+        Me.Report_Link.Name = "Report_Link"
+        Me.Report_Link.Size = New System.Drawing.Size(66, 19)
+        Me.Report_Link.TabIndex = 1
+        Me.Report_Link.TabStop = True
+        Me.Report_Link.Text = "Reports"
         '
-        'PictureBox7
+        'Report_PictureBox
         '
-        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(24, 10)
-        Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(83, 84)
-        Me.PictureBox7.TabIndex = 0
-        Me.PictureBox7.TabStop = False
+        Me.Report_PictureBox.Image = CType(resources.GetObject("Report_PictureBox.Image"), System.Drawing.Image)
+        Me.Report_PictureBox.Location = New System.Drawing.Point(24, 10)
+        Me.Report_PictureBox.Name = "Report_PictureBox"
+        Me.Report_PictureBox.Size = New System.Drawing.Size(83, 84)
+        Me.Report_PictureBox.TabIndex = 0
+        Me.Report_PictureBox.TabStop = False
         '
         'Panel11
         '
         Me.Panel11.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel11.Controls.Add(Me.LinkLabel9)
-        Me.Panel11.Controls.Add(Me.PictureBox8)
+        Me.Panel11.Controls.Add(Me.Change_Pwd_Link)
+        Me.Panel11.Controls.Add(Me.Change_Pwd_PictureBox)
         Me.Panel11.Location = New System.Drawing.Point(363, 364)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(139, 126)
         Me.Panel11.TabIndex = 78
         '
-        'LinkLabel9
+        'Change_Pwd_Link
         '
-        Me.LinkLabel9.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel9.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel9.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel9.Location = New System.Drawing.Point(3, 97)
-        Me.LinkLabel9.Name = "LinkLabel9"
-        Me.LinkLabel9.Size = New System.Drawing.Size(133, 19)
-        Me.LinkLabel9.TabIndex = 1
-        Me.LinkLabel9.TabStop = True
-        Me.LinkLabel9.Text = "Change Password"
+        Me.Change_Pwd_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Change_Pwd_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Change_Pwd_Link.ForeColor = System.Drawing.Color.Black
+        Me.Change_Pwd_Link.LinkColor = System.Drawing.Color.Black
+        Me.Change_Pwd_Link.Location = New System.Drawing.Point(3, 97)
+        Me.Change_Pwd_Link.Name = "Change_Pwd_Link"
+        Me.Change_Pwd_Link.Size = New System.Drawing.Size(133, 19)
+        Me.Change_Pwd_Link.TabIndex = 1
+        Me.Change_Pwd_Link.TabStop = True
+        Me.Change_Pwd_Link.Text = "Change Password"
         '
-        'PictureBox8
+        'Change_Pwd_PictureBox
         '
-        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(24, 10)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(83, 84)
-        Me.PictureBox8.TabIndex = 0
-        Me.PictureBox8.TabStop = False
+        Me.Change_Pwd_PictureBox.Image = CType(resources.GetObject("Change_Pwd_PictureBox.Image"), System.Drawing.Image)
+        Me.Change_Pwd_PictureBox.Location = New System.Drawing.Point(24, 10)
+        Me.Change_Pwd_PictureBox.Name = "Change_Pwd_PictureBox"
+        Me.Change_Pwd_PictureBox.Size = New System.Drawing.Size(83, 84)
+        Me.Change_Pwd_PictureBox.TabIndex = 0
+        Me.Change_Pwd_PictureBox.TabStop = False
         '
         'Panel12
         '
         Me.Panel12.BackColor = System.Drawing.SystemColors.Highlight
-        Me.Panel12.Controls.Add(Me.LinkLabel10)
-        Me.Panel12.Controls.Add(Me.PictureBox9)
+        Me.Panel12.Controls.Add(Me.Email_Link)
+        Me.Panel12.Controls.Add(Me.Email_PictureBox)
         Me.Panel12.Location = New System.Drawing.Point(192, 364)
         Me.Panel12.Name = "Panel12"
         Me.Panel12.Size = New System.Drawing.Size(151, 126)
         Me.Panel12.TabIndex = 77
         '
-        'LinkLabel10
+        'Email_Link
         '
-        Me.LinkLabel10.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
-        Me.LinkLabel10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LinkLabel10.ForeColor = System.Drawing.Color.Black
-        Me.LinkLabel10.LinkColor = System.Drawing.Color.Black
-        Me.LinkLabel10.Location = New System.Drawing.Point(38, 97)
-        Me.LinkLabel10.Name = "LinkLabel10"
-        Me.LinkLabel10.Size = New System.Drawing.Size(58, 19)
-        Me.LinkLabel10.TabIndex = 1
-        Me.LinkLabel10.TabStop = True
-        Me.LinkLabel10.Text = "Email"
+        Me.Email_Link.BackColor = System.Drawing.SystemColors.GradientInactiveCaption
+        Me.Email_Link.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Email_Link.ForeColor = System.Drawing.Color.Black
+        Me.Email_Link.LinkColor = System.Drawing.Color.Black
+        Me.Email_Link.Location = New System.Drawing.Point(38, 97)
+        Me.Email_Link.Name = "Email_Link"
+        Me.Email_Link.Size = New System.Drawing.Size(58, 19)
+        Me.Email_Link.TabIndex = 1
+        Me.Email_Link.TabStop = True
+        Me.Email_Link.Text = "Email"
         '
-        'PictureBox9
+        'Email_PictureBox
         '
-        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(24, 10)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(83, 84)
-        Me.PictureBox9.TabIndex = 0
-        Me.PictureBox9.TabStop = False
-        '
-        'ReportsToolStripMenuItem
-        '
-        Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
-        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
-        Me.ReportsToolStripMenuItem.Text = "Reports"
+        Me.Email_PictureBox.Image = CType(resources.GetObject("Email_PictureBox.Image"), System.Drawing.Image)
+        Me.Email_PictureBox.Location = New System.Drawing.Point(24, 10)
+        Me.Email_PictureBox.Name = "Email_PictureBox"
+        Me.Email_PictureBox.Size = New System.Drawing.Size(83, 84)
+        Me.Email_PictureBox.TabIndex = 0
+        Me.Email_PictureBox.TabStop = False
         '
         'Select_Action
         '
@@ -694,23 +694,23 @@ Partial Class Select_Action
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Student_Reg_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Fees_Status_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel5.ResumeLayout(False)
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Add_Class_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Add_Test_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel8.ResumeLayout(False)
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Assign_Subject_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel9.ResumeLayout(False)
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Marks_Data_Entry_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel10.ResumeLayout(False)
-        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Report_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel11.ResumeLayout(False)
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Change_Pwd_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel12.ResumeLayout(False)
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Email_PictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -747,31 +747,31 @@ Partial Class Select_Action
     Friend WithEvents EmailToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ChangePasswordToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents Student_Reg_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Student_Reg_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents Fees_Status_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Fees_Status_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel4 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Add_Class_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Add_Class_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel7 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel5 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
+    Friend WithEvents Add_Test_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Add_Test_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel8 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel6 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox5 As System.Windows.Forms.PictureBox
+    Friend WithEvents Assign_Subject_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Assign_Subject_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel9 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel7 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox6 As System.Windows.Forms.PictureBox
+    Friend WithEvents Marks_Data_Entry_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Marks_Data_Entry_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel10 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel8 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox7 As System.Windows.Forms.PictureBox
+    Friend WithEvents Report_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Report_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel11 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel9 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox8 As System.Windows.Forms.PictureBox
+    Friend WithEvents Change_Pwd_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Change_Pwd_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents Panel12 As System.Windows.Forms.Panel
-    Friend WithEvents LinkLabel10 As System.Windows.Forms.LinkLabel
-    Friend WithEvents PictureBox9 As System.Windows.Forms.PictureBox
+    Friend WithEvents Email_Link As System.Windows.Forms.LinkLabel
+    Friend WithEvents Email_PictureBox As System.Windows.Forms.PictureBox
     Friend WithEvents ReportsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

@@ -133,7 +133,7 @@ Public Class Marks_Data_Entry
                     con.Open()
                     Dim count As Integer
                     count = Stud_Id.Items.Count
-                    MsgBox(count)
+                    'MsgBox(count)
                     Dim cmd As OdbcCommand
                     Dim dtest, cname, tid, sid, mobt As String
                     dtest = DOT.Text

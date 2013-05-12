@@ -112,7 +112,7 @@ Public Class Add_Class
     End Sub
 
     Private Sub reset_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles reset.Click
-
+        subcombo.Text = ""
         Class_Name.Clear()
         Sub_Name.Clear()
         Sub_Id.Clear()
@@ -176,6 +176,9 @@ Public Class Add_Class
             'classlabel.Visible = False
             Class_Name.Visible = False
             subcombo.Visible = True
+            Sub_Name.Clear()
+            Sub_Id.Clear()
+            Fees.Clear()
         End If
     End Sub
 
@@ -197,4 +200,7 @@ Public Class Add_Class
         con.Close()
     End Sub
 
+    Private Sub Sub_Idcombo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Sub_Idcombo.SelectedIndexChanged
+
+    End Sub
 End Class

@@ -529,3 +529,33 @@ J:\latest project\Shree15\Shree_Edu\Shree_Edu\bin\Debug\Shree_Edu.exe.config
 J:\latest project\Shree15\Shree_Edu\Shree_Edu\obj\Debug\Shree_Edu.exe
 J:\latest project\Shree15\Shree_Edu\Shree_Edu\obj\Debug\Shree_Edu.xml
 J:\latest project\Shree15\Shree_Edu\Shree_Edu\obj\Debug\Shree_Edu.pdb
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\bin\Debug\Shree_Edu.exe.config
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\Shree_Edu.exe
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\Shree_Edu.xml
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\Shree_Edu.pdb
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\bin\Debug\Shree_Edu.exe
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\bin\Debug\Shree_Edu.pdb
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\bin\Debug\Shree_Edu.xml
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Add_Class.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Add_Test.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Add_User.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Ask_Add_Delete_User.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Change_Pwd.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.class_report.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.emailtest.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Fees_status.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.FogortPasswordForm.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.forgotChangePassword.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.loginForm.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Marks_Data_Entry.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Master_Password.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Profile_Report.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Reports.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Resources.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Individual_Report_Form.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Assign_sub.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Select_Action.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Signup.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\ShreeEducation.Student_Reg.resources
+C:\Users\Nitesh\Desktop\shree.git\Shree_Edu\Shree_Edu\obj\Debug\Shree_Edu.vbproj.GenerateResource.Cache

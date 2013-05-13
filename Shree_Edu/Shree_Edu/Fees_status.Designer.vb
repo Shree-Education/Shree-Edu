@@ -24,12 +24,9 @@ Partial Class Fees_status
     Private Sub InitializeComponent()
         Me.Class_Combo = New System.Windows.Forms.ComboBox
         Me.Label1 = New System.Windows.Forms.Label
-        Me.Session_Combo = New System.Windows.Forms.ComboBox
         Me.Month_Combo = New System.Windows.Forms.ComboBox
-        Me.Subid_Combo = New System.Windows.Forms.ComboBox
         Me.Studid_Combo = New System.Windows.Forms.ComboBox
         Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
         Me.Label4 = New System.Windows.Forms.Label
         Me.Label5 = New System.Windows.Forms.Label
         Me.Label6 = New System.Windows.Forms.Label
@@ -58,9 +55,14 @@ Partial Class Fees_status
         Me.checkradio = New System.Windows.Forms.RadioButton
         Me.ddradio = New System.Windows.Forms.RadioButton
         Me.cashradio = New System.Windows.Forms.RadioButton
+        Me.sessionLabel = New System.Windows.Forms.Label
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip
+        Me.feesAddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.feesDiscountToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.discountpanel.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Class_Combo
@@ -82,15 +84,6 @@ Partial Class Fees_status
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Class"
         '
-        'Session_Combo
-        '
-        Me.Session_Combo.FormattingEnabled = True
-        Me.Session_Combo.Location = New System.Drawing.Point(168, 45)
-        Me.Session_Combo.Margin = New System.Windows.Forms.Padding(4)
-        Me.Session_Combo.Name = "Session_Combo"
-        Me.Session_Combo.Size = New System.Drawing.Size(197, 24)
-        Me.Session_Combo.TabIndex = 1
-        '
         'Month_Combo
         '
         Me.Month_Combo.FormattingEnabled = True
@@ -100,15 +93,6 @@ Partial Class Fees_status
         Me.Month_Combo.Name = "Month_Combo"
         Me.Month_Combo.Size = New System.Drawing.Size(197, 24)
         Me.Month_Combo.TabIndex = 5
-        '
-        'Subid_Combo
-        '
-        Me.Subid_Combo.FormattingEnabled = True
-        Me.Subid_Combo.Location = New System.Drawing.Point(168, 181)
-        Me.Subid_Combo.Margin = New System.Windows.Forms.Padding(4)
-        Me.Subid_Combo.Name = "Subid_Combo"
-        Me.Subid_Combo.Size = New System.Drawing.Size(197, 24)
-        Me.Subid_Combo.TabIndex = 4
         '
         'Studid_Combo
         '
@@ -128,16 +112,6 @@ Partial Class Fees_status
         Me.Label2.Size = New System.Drawing.Size(49, 16)
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Month"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(26, 189)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(77, 16)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Subject Id"
         '
         'Label4
         '
@@ -413,12 +387,44 @@ Partial Class Fees_status
         Me.cashradio.Text = "Cash"
         Me.cashradio.UseVisualStyleBackColor = True
         '
+        'sessionLabel
+        '
+        Me.sessionLabel.AutoSize = True
+        Me.sessionLabel.Location = New System.Drawing.Point(109, 53)
+        Me.sessionLabel.Name = "sessionLabel"
+        Me.sessionLabel.Size = New System.Drawing.Size(485, 16)
+        Me.sessionLabel.TabIndex = 33
+        Me.sessionLabel.Text = "Session Shold be displayed automatically from DB , jo current hai abi"
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.feesAddToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(536, 24)
+        Me.MenuStrip1.TabIndex = 34
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'feesAddToolStripMenuItem
+        '
+        Me.feesAddToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.feesDiscountToolStripMenuItem})
+        Me.feesAddToolStripMenuItem.Name = "feesAddToolStripMenuItem"
+        Me.feesAddToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.feesAddToolStripMenuItem.Text = "Add"
+        '
+        'feesDiscountToolStripMenuItem
+        '
+        Me.feesDiscountToolStripMenuItem.Name = "feesDiscountToolStripMenuItem"
+        Me.feesDiscountToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.feesDiscountToolStripMenuItem.Text = "Discount"
+        '
         'Fees_status
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.ClientSize = New System.Drawing.Size(536, 617)
+        Me.Controls.Add(Me.sessionLabel)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label10)
@@ -434,15 +440,14 @@ Partial Class Fees_status
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Studid_Combo)
-        Me.Controls.Add(Me.Subid_Combo)
         Me.Controls.Add(Me.Month_Combo)
-        Me.Controls.Add(Me.Session_Combo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Class_Combo)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Fees_status"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -453,18 +458,17 @@ Partial Class Fees_status
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Class_Combo As System.Windows.Forms.ComboBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents Session_Combo As System.Windows.Forms.ComboBox
     Friend WithEvents Month_Combo As System.Windows.Forms.ComboBox
-    Friend WithEvents Subid_Combo As System.Windows.Forms.ComboBox
     Friend WithEvents Studid_Combo As System.Windows.Forms.ComboBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -493,4 +497,8 @@ Partial Class Fees_status
     Friend WithEvents checkradio As System.Windows.Forms.RadioButton
     Friend WithEvents ddradio As System.Windows.Forms.RadioButton
     Friend WithEvents cashradio As System.Windows.Forms.RadioButton
+    Friend WithEvents sessionLabel As System.Windows.Forms.Label
+    Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
+    Friend WithEvents feesAddToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents feesDiscountToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

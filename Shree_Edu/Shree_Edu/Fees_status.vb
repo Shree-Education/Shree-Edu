@@ -120,96 +120,28 @@ Public Class Fees_status
     End Sub
 
 
-    Private Sub yesradio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles yesradio.CheckedChanged
-        If yesradio.Checked = True Then
-            discountpanel.Visible = True
-        End If
-    End Sub
 
     Private Sub Fees_status_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        amountpaidbox.Enabled = False
-        discountpanel.Visible = False
-        disamtlabel.Visible = False
-        discountamountbox.Visible = False
-        percentbox.Visible = False
-        Percentlabel.Visible = False
-        perdiscountbox.Visible = False
-        peramountlabel.Visible = False
-        amount.Enabled = False
-    End Sub
-
-    Private Sub noradio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles noradio.CheckedChanged
-        If noradio.Checked = True Then
-            discountpanel.Visible = False
-            amountpaidbox.Text = amount.Text
-        End If
-
-    End Sub
-
-    Private Sub Rupeesradio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Rupeesradio.CheckedChanged
-        If Rupeesradio.Checked = True Then
-            percentbox.Visible = False
-            Percentlabel.Visible = False
-            disamtlabel.Visible = True
-            discountamountbox.Visible = True
-            perdiscountbox.Visible = False
-            peramountlabel.Visible = False
-            percentbox.Clear()
-            perdiscountbox.Clear()
-        End If
-    End Sub
-
-    Private Sub percentageradio_CheckedChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles percentageradio.CheckedChanged
-        If percentageradio.Checked = True Then
-            disamtlabel.Visible = False
-            discountamountbox.Visible = False
-            percentbox.Visible = True
-            perdiscountbox.Visible = True
-            peramountlabel.Visible = True
-            Percentlabel.Visible = True
-            discountamountbox.Clear()
-            perdiscountbox.Enabled = False
-        End If
-    End Sub
-
-
-    Private Sub percentbox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles percentbox.TextChanged
         Try
-            If percentbox.Text > 100 Then
-                MsgBox("Enter correct value", MsgBoxStyle.Critical)
-            Else
-                perdiscountbox.Text = (percentbox.Text * amount.Text) / 100
-
-                amountpaidbox.Text = Val(amount.Text) - Val(perdiscountbox.Text)
-            End If
+            con.Open()
+            Dim cmd As OdbcCommand
+            cmd = New OdbcCommand("Select Distinct Year from student_Info order by Year ASC", con)
+            Dim dr As OdbcDataReader
+            dr = cmd.ExecuteReader
+            While dr.Read
+                sessionLabel.Text = dr(0)
+            End While
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
-        
-        
+        con.Close()
+        vamount = totalamounttextbox.Text
+        vamounttobepaid = amounttobepaidtextbox.Text
     End Sub
-
-    Private Sub discountamountbox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles discountamountbox.TextChanged
-        Try
-            If Val(discountamountbox.Text) > Val(amount.Text) Then
-                MsgBox("Enter correct value", MsgBoxStyle.Critical)
-            Else
-                amountpaidbox.Text = amount.Text - discountamountbox.Text
-            End If
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
-        
-
-    End Sub
-
 
     Private Sub cashradio_CheckedChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cashradio.CheckedChanged
         If cashradio.Checked = True Then
             checkddno.Text = "Not Available"
-            If noradio.Checked = False Then
-                amountpaidbox.Text = amount.Text
-            End If
         End If
     End Sub
 
@@ -225,13 +157,9 @@ Public Class Fees_status
         End If
     End Sub
 
-    Private Sub Subid_Combo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-  
    
     Private Sub feesDiscountToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles feesDiscountToolStripMenuItem.Click
-        Fees__Discount.ShowDialog()
+        Add_discount.Show()
     End Sub
+
 End Class

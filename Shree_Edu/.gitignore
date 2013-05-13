@@ -10,6 +10,7 @@ obj/
 
 /bin
 /obj
+/My Project
 *.user
 *.suo
 *.sln.cache
